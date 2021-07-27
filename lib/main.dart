@@ -1,12 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:task_flutter/screens/SignupScreen.dart';
-import 'package:task_flutter/screens/newsPage.dart';
-import 'utils/utils_functions.dart';
-import 'dart:async';
-
+import 'screens/SignUpPage.dart';
 
 
 
@@ -21,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Sign Up",
       home: SafeArea(
-        child: SignUpScreen(),
+        child: signUpPage(),
       ),
     );
   }
