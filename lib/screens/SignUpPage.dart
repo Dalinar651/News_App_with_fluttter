@@ -167,13 +167,16 @@ class _signUpPageState extends State<signUpPage> {
                           ),
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.symmetric(
-                            horizontal: 40.0, vertical: 10.0),
-                        height: 40.0,
-                        child: Center(
-                          child: TextButton(
-                            onPressed: registerWithEmail,
+                      TextButton(
+                        onPressed: registerWithEmail,
+                        child: Container(
+                          margin: EdgeInsets.symmetric(
+                              horizontal: 40.0, vertical: 10.0),
+                          height: 40.0,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0FAAE2),
+                              borderRadius: BorderRadius.circular(50.0)),
+                          child: Center(
                             child: Text(
                               "Sign Up",
                               style: TextStyle(
@@ -182,9 +185,6 @@ class _signUpPageState extends State<signUpPage> {
                             ),
                           ),
                         ),
-                        decoration: BoxDecoration(
-                            color: Color(0xff0FAAE2),
-                            borderRadius: BorderRadius.circular(50.0)),
                       ),
                       Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                         Expanded(

@@ -148,13 +148,16 @@ class _loginPageState extends State<loginPage> {
                           ),
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.symmetric(
-                            horizontal: 40.0, vertical: 10.0),
-                        height: 40.0,
-                        child: Center(
-                          child: TextButton(
-                            onPressed: LoginWithEmail,
+                      TextButton(
+                        onPressed: LoginWithEmail,
+                        child: Container(
+                          margin: EdgeInsets.symmetric(
+                              horizontal: 40.0, vertical: 10.0),
+                          height: 40.0,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0FAAE2),
+                              borderRadius: BorderRadius.circular(50.0)),
+                          child: Center(
                             child: Text(
                               "Login",
                               style: TextStyle(
@@ -163,9 +166,6 @@ class _loginPageState extends State<loginPage> {
                             ),
                           ),
                         ),
-                        decoration: BoxDecoration(
-                            color: Color(0xff0FAAE2),
-                            borderRadius: BorderRadius.circular(50.0)),
                       ),
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
