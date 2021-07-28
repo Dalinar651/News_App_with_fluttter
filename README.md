@@ -1,6 +1,6 @@
-# task_flutter
+# News_App_with_fluttter
 
-A new Flutter project.
+Made a news app using APIs.
 
 ## Getting Started
 
