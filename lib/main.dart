@@ -2,8 +2,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'screens/SignUpPage.dart';
-import 'auth.dart';
-import 'screens/newsPage.dart';
+// import 'auth.dart';
+// import 'screens/newsPage.dart';
 
 
 
