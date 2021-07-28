@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'screens/SignUpPage.dart';
+import 'auth.dart';
 
 
 
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (authentication){
+      return MyApp();
+    }
     return MaterialApp(
       title: "Sign Up",
       home: SafeArea(

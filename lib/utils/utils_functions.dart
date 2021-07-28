@@ -31,10 +31,19 @@ class News {
 }
 
 Future<Map<String, dynamic>> register (String email,String password ,String passwordConf) async{
-  String url="https://nodejs-register-login-app.herokuapp.com";
+  String url="https://nodejs-register-login-app.herokuapp.com/";
   http.Response response = await http.post(
     Uri.parse(url),
     body: {'email': email,"username": "test", 'password': password, 'passwordConf':passwordConf},
+  );
+  Map<String, dynamic> json=jsonDecode(response.body);
+  return json;
+}
+Future<Map<String, dynamic>> login (String email,String password) async{
+  String url="https://nodejs-register-login-app.herokuapp.com/login";
+  http.Response response = await http.post(
+    Uri.parse(url),
+    body: {'email': email, 'password': password},
   );
   Map<String, dynamic> json=jsonDecode(response.body);
   return json;
