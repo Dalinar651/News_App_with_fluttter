@@ -22,7 +22,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: "Sign Up",
       home: SafeArea(
-        child: signUpPage(),
+        child: Scaffold(
+          body: signUpPage(),
+        ),
       ),
     );
   }

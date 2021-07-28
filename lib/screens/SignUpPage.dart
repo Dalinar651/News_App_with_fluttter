@@ -41,20 +41,13 @@ class _signUpPageState extends State<signUpPage> {
   @override
   Widget build(BuildContext context) {
     if (authentication){
-      return MaterialApp(
-        title: "News Page",
-        home: SafeArea(
-          child: Scaffold(
-            body: news(),
-          ),
-        ),
-      );
+      return news();
     }
     if (flag) {
       return loginPage();
     }
-    return Scaffold(
-      body: Stack(
+    return
+      Stack(
         children: [
           Container(
             decoration: BoxDecoration(
@@ -118,6 +111,7 @@ class _signUpPageState extends State<signUpPage> {
                             color: Colors.grey[100]),
                         child: TextField(
                           controller: _email,
+                          keyboardType: TextInputType.emailAddress,
                           decoration: InputDecoration(
 //                   border: null,
                             hintText: 'Email:',
@@ -136,6 +130,7 @@ class _signUpPageState extends State<signUpPage> {
                             borderRadius: BorderRadius.circular(15.0),
                             color: Colors.grey[100]),
                         child: TextField(
+                          obscureText: true,
                           controller: _password,
                           decoration: InputDecoration(
 //                   border: null,
@@ -156,6 +151,7 @@ class _signUpPageState extends State<signUpPage> {
                             borderRadius: BorderRadius.circular(15.0),
                             color: Colors.grey[100]),
                         child: TextField(
+                          obscureText: true,
                           controller: _pass_conf,
                           decoration: InputDecoration(
 //                   border: null,
@@ -239,7 +235,6 @@ class _signUpPageState extends State<signUpPage> {
             ),
           ]),
         ],
-      ),
-    );
+      );
   }
 }

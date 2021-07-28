@@ -40,14 +40,7 @@ class _loginPageState extends State<loginPage> {
 
   Widget build(BuildContext context) {
     if (authentication){
-      return MaterialApp(
-        title: "News Page",
-        home: SafeArea(
-          child: Scaffold(
-            body: news(),
-          ),
-        ),
-      );
+      return news();
     }
 
     if (flag) {
@@ -118,6 +111,7 @@ class _loginPageState extends State<loginPage> {
                             borderRadius: BorderRadius.circular(15.0),
                             color: Colors.grey[100]),
                         child: TextField(
+                          keyboardType: TextInputType.emailAddress
                           controller: _email,
                           decoration: InputDecoration(
 //                   border: null,
@@ -138,6 +132,7 @@ class _loginPageState extends State<loginPage> {
                             color: Colors.grey[100]),
                         child: TextField(
                           controller: _password,
+                          obscureText: true,
                           decoration: InputDecoration(
 //                   border: null,
                             hintText: 'Password:',
