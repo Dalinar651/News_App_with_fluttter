@@ -6,14 +6,14 @@ import '../utils/utils_functions.dart';
 import 'dart:async';
 
 
-class MyApp extends StatefulWidget {
-  MyApp({Key? key}) : super(key: key);
+class news extends StatefulWidget {
+  news({Key? key}) : super(key: key);
 
   @override
-  _MyAppState createState() => _MyAppState();
+  _newsState createState() => _newsState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _newsState extends State<news> {
   List<Color> favouriteNews=[];
   List<int> count=[];
   String summary='';
