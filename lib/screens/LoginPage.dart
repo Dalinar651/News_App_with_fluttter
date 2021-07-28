@@ -111,7 +111,7 @@ class _loginPageState extends State<loginPage> {
                             borderRadius: BorderRadius.circular(15.0),
                             color: Colors.grey[100]),
                         child: TextField(
-                          keyboardType: TextInputType.emailAddress
+                          keyboardType: TextInputType.emailAddress,
                           controller: _email,
                           decoration: InputDecoration(
 //                   border: null,
