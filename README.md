@@ -10,7 +10,7 @@ Made a news app using APIs.
 <p></p>
 ![]<img src="https://user-images.githubusercontent.com/65916948/127499506-09042f21-9827-47af-b99a-b545529c0061.jpg" width="400" height="790">
 <p></p>
-<img src="hhttps://user-images.githubusercontent.com/65916948/127502275-95ec142a-2473-4b23-98c1-71bd1c6f48e6.jpg" width="400" height="790">
+<img src="https://user-images.githubusercontent.com/65916948/127502275-95ec142a-2473-4b23-98c1-71bd1c6f48e6.jpg" width="400" height="790">
 <p></p>
 <img src='https://user-images.githubusercontent.com/65916948/127501692-4fc58f1c-f894-48e8-aa42-bdab307cd1e9.jpg', width='400' height='790'>
 
