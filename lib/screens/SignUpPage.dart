@@ -30,7 +30,7 @@ class _signUpPageState extends State<signUpPage> {
       register(_email.text, _password.text, _pass_conf.text).then((value) {
         if(value['Success']=='Success!'){
           setState(() {
-            authentication=true;
+            prefs!.setBool('login', true);
           });
         }else{
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(value['Success'])));
@@ -40,8 +40,10 @@ class _signUpPageState extends State<signUpPage> {
 
   @override
   Widget build(BuildContext context) {
-    if (authentication){
-      return news();
+    if(prefs !=null ){
+      if (prefs!.getBool('login') ?? false){
+        return news();
+      }
     }
     if (flag) {
       return loginPage();

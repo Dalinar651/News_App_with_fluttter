@@ -133,15 +133,9 @@ class _newsState extends State<news> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return MaterialApp(
-      title: 'Fetch Data Example',
-      theme: ThemeData(
-        // primaryColor: Colors.black,
-      ),
-      home: SafeArea(
-        child: Scaffold(
-          bottomNavigationBar: BottomAppBar(
+    return Scaffold(
+      bottomNavigationBar:
+          BottomAppBar(
             child: Row(
               children: [
                 Expanded(
@@ -258,9 +252,7 @@ class _newsState extends State<news> {
               },
             ),
           ),
-        ),
-      ),
-    );
+        );
   }
 
 }

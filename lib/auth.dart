@@ -1,2 +1,15 @@
+import 'package:shared_preferences/shared_preferences.dart';
 
-bool authentication=false;
+SharedPreferences ? prefs;
+
+Future<SharedPreferences> initilize() async{
+  return SharedPreferences.getInstance();
+}
+
+// final myBool = prefs!.getBool('login') ?? false;
+
+
+
+
+
+// bool authentication=false;

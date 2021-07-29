@@ -29,7 +29,7 @@ class _loginPageState extends State<loginPage> {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text(value['Success'])));
         setState(() {
-          authentication = true;
+          prefs!.setBool('login',true);
         });
       } else {
         ScaffoldMessenger.of(context)
@@ -39,15 +39,15 @@ class _loginPageState extends State<loginPage> {
   }
 
   Widget build(BuildContext context) {
-    if (authentication){
+    if (prefs!.getBool('login') ?? false){
       return news();
     }
 
     if (flag) {
       return signUpPage();
     }
-    return Scaffold(
-      body: Stack(
+    return
+      Stack(
         children: [
           Container(
             decoration: BoxDecoration(
@@ -220,7 +220,6 @@ class _loginPageState extends State<loginPage> {
             ),
           ]),
         ],
-      ),
-    );
+      );
   }
 }
