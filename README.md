@@ -1,8 +1,11 @@
 # News_App_with_fluttter
 
 Made a news app using APIs.
-
+<br>
+Login Sign up using REST Api.
+<br>
 Added login persistance for 12 minutes.
+<br>
 Added favourites news feature.
 
 
