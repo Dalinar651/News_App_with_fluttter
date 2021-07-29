@@ -27,14 +27,20 @@ class _MyAppState extends State<MyApp> {
         prefs=value;
 
         if(prefs!.getInt('time_min')!=null){
-          if( now.minute.toInt()- prefs!.getInt('time_min')! >11  ){
+          if( now.minute.toInt()- prefs!.getInt('time_min')! >11 ){
             prefs!.setBool('login', false);
+
           }else if( now.hour!=prefs!.getInt('time_hour')){
             prefs!.setBool('login', false);
+
+          }else{
+            print("time:${prefs!.getInt('time_min')!}");
+            return;
           }
         }
        prefs!.setInt('time_min', now.minute);
        prefs!.setInt('time_hour', now.hour);
+        print("time:${prefs!.getInt('time_min')!}");
         // now.
       });
     });
